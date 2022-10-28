@@ -12,7 +12,7 @@ const Navigation: FC = () => {
             <Stack.Navigator screenOptions={{
                 headerShown: false,
                 contentStyle: {
-                    backgroundColor: '#090909'
+                    backgroundColor: 'white'
                 }
             }}>
                 {userRoutes.map(route => (
