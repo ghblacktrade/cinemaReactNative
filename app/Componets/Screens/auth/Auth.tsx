@@ -1,10 +1,11 @@
 import React, {FC} from 'react';
+import {Text} from "react-native";
 
 const Auth :FC= () => {
     return (
-        <div>
-
-        </div>
+        <Text>
+Auth
+        </Text>
     );
 };
 
