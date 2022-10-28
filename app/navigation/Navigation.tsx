@@ -6,14 +6,18 @@ import {userRoutes} from "./user.routes";
 
 const Stack = createNativeStackNavigator<TypeRootStackParamList>()
 
-const Navigation :FC= () => {
+const Navigation: FC = () => {
     return (
         <NavigationContainer>
-<Stack.Navigator>
-    {userRoutes.map(route => (
-        <Stack.Screen key={route.name} {...route} />
-    ))}
-</Stack.Navigator>
+            <Stack.Navigator screenOptions={{
+                contentStyle: {
+                    backgroundColor: '#090909'
+                }
+            }}>
+                {userRoutes.map(route => (
+                    <Stack.Screen key={route.name} {...route} />
+                ))}
+            </Stack.Navigator>
         </NavigationContainer>
     );
 };

@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
 import {Text} from "react-native";
 
-const Home :FC= () => {
+const Header :FC= () => {
     return (
         <Text>
-Home
+            Header
         </Text>
     );
 };
 
-export default Home;
+export default Header;

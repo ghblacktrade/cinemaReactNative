@@ -6,12 +6,12 @@ export type TypeRootStackParamList = {
 
 } & TypeRootStackParamAdmin
 
-export type TypeRootStackParamAdmin = {
+ type TypeRootStackParamAdmin = {
     Admin: undefined
 }
 
 export interface IRoute {
-    name: keyof TypeRootStackParamAdmin
+    name: keyof TypeRootStackParamList
     component: ComponentType
     isAdmin?: boolean
 }
