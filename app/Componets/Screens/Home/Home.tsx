@@ -5,7 +5,7 @@ import {useTypedNavigation} from "../../../hooks/useTypedNavigation";
 const Home :FC= () => {
     const {navigate} = useTypedNavigation()
     return (
-        <View className='mt-10'>
+        <View className='mt-10 left-5'>
 
         <Text>
 Home
