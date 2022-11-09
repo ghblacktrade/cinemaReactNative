@@ -5,12 +5,12 @@ import {useTypedNavigation} from "../../../hooks/useTypedNavigation";
 const Home: FC = () => {
     const {navigate} = useTypedNavigation()
     return (
-        <View>
+        <View className='mr-10 p-20'>
             <Text>
                 Home
             </Text>
             <Pressable onPress={() => navigate('Auth')}>
-                <Text style={{color: 'white'}}>Go to login!</Text>
+                <Text style={{color: 'black'}}>Go to login!</Text>
             </Pressable>
         </View>
     );

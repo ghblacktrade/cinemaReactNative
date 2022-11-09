@@ -1,10 +1,11 @@
 import React, {FC} from 'react';
+import {Text} from "react-native";
 
 const Admin :FC= () => {
     return (
-        <div>
-
-        </div>
+        <Text>
+dfsfdsd
+        </Text>
     );
 };
 

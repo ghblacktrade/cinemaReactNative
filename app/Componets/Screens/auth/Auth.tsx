@@ -21,23 +21,24 @@ const Auth: FC = () => {
     return (
         <View className='mx-10 items-center justify-center h-full '>
             <View className='w-9/12'>
-                <Text className='text-center text-white text-4xl font-bolt mb-2.5'>
+                <Text className='text-center text-black text-4xl font-bold mb-2.5'>
                     {isReg ? 'Register' : 'Login'}
                 </Text>
-                {isLoading ? (<Loader/>) : (<>
-                    <Button onPress={handleSubmit(onSubmit)} icon={'film'}>
-                        Go to watch
-                    </Button>
-                    <Pressable onPress={() => setIsReg(!isReg)}>
-                        <Text className='text-white opacity-30 text-right text-base mt-3'>
-                            {isReg ? 'Login' : 'Register'}
-                        </Text>
-                    </Pressable>
-                </>)}
-            </View>
+                {isLoading ? (<Loader/>) : (
+                    <>
 
+ <Pressable onPress={() => setIsReg(!isReg)}>
+     <Text className='text-black opacity-30 text-right text-base mt-3'>
+         {isReg ? 'Login' : 'Register'}
+
+     </Text>
+ </Pressable>
+                </>)}
+
+            </View>
         </View>
-    );
-};
+
+    )
+}
 
 export default Auth;
