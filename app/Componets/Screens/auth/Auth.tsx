@@ -29,7 +29,7 @@ const Auth: FC = () => {
                     <Loader/>
                 ) : (
                     <>
-                        <Button className='' onPress={handleSubmit(onSubmit)} icon={'film'}>
+                        <Button className='rounded-lg border-2 p-2 left-0.5' onPress={handleSubmit(onSubmit)}>
                             Go to watch
                         </Button>
                         <Pressable onPress={() => setIsReg(!isReg)}>
