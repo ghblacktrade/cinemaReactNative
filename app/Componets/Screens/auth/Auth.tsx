@@ -4,6 +4,7 @@ import {SubmitHandler, useForm} from "react-hook-form";
 import {IAuthFormData} from "../../../../shared/types/auth.interface";
 import Loader from "../../UI/Loader";
 import Button from "../../UI/Button";
+import TestComponent from "../admin/home/TestComponent";
 
 const Auth: FC = () => {
 
@@ -24,17 +25,20 @@ const Auth: FC = () => {
                 <Text className='text-center text-black text-4xl font-bold mb-2.5'>
                     {isReg ? 'Register' : 'Login'}
                 </Text>
-                {isLoading ? (<Loader/>) : (
+                {isLoading ? (
+                    <Loader/>
+                ) : (
                     <>
-
- <Pressable onPress={() => setIsReg(!isReg)}>
-     <Text className='text-black opacity-30 text-right text-base mt-3'>
-         {isReg ? 'Login' : 'Register'}
-
-     </Text>
- </Pressable>
-                </>)}
-
+                        <Button className='' onPress={handleSubmit(onSubmit)} icon={'film'}>
+                            Go to watch
+                        </Button>
+                        <Pressable onPress={() => setIsReg(!isReg)}>
+                            <Text className='text-black opacity-30 text-right text-base mt-3'>
+                                {isReg ? 'Login' : 'Register'}
+                            </Text>
+                        </Pressable>
+                    </>
+                )}
             </View>
         </View>
 
