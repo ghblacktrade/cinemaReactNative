@@ -15,7 +15,8 @@ const Field = <T extends Record<string, any>>({
     return (
         <Controller control={control} name={name} rules={rules} render={
             ({field: {value, onChange, onBlur}, fieldState: {error}}) => <>
-                <View className={cn('bg-[#232323] w-full border rounded-lg pb-4 pt-2.5 px-4 my-1.5',
+                <View className={cn(
+                    'bg-[#555555] w-full border rounded-lg pb-4 pt-2.5 px-4 my-1.5',
                     error ? 'border-red' : 'border-transparent'
                 )}>
                     <TextInput autoCapitalize={'none'} onChangeText={onChange} onBlur={onBlur}
