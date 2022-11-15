@@ -5,6 +5,7 @@ import {IAuthFormData} from "../../../../shared/types/auth.interface";
 import Loader from "../../UI/Loader";
 import Button from "../../UI/Button";
 import TestComponent from "../admin/home/TestComponent";
+import AuthFields from "./AuthFields";
 
 const Auth: FC = () => {
 
@@ -29,6 +30,7 @@ const Auth: FC = () => {
                     <Loader/>
                 ) : (
                     <>
+                        <AuthFields control={control} isPassRequired />
                         <Button className='rounded-lg border-2 p-2 left-0.5' onPress={handleSubmit(onSubmit)}>
                             Go to watch
                         </Button>
