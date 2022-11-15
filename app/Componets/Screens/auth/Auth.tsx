@@ -6,6 +6,7 @@ import Loader from "../../UI/Loader";
 import Button from "../../UI/Button";
 import TestComponent from "../admin/home/TestComponent";
 import AuthFields from "./AuthFields";
+import DismissKeyboard from "../../UI/form-elements/fields/DismissKeyboard";
 
 const Auth: FC = () => {
 
@@ -21,6 +22,7 @@ const Auth: FC = () => {
     const isLoading = false
 
     return (
+        <DismissKeyboard>
         <View className='mx-10 items-center justify-center h-full '>
             <View className='w-9/12'>
                 <Text className='text-center text-black text-4xl font-bold mb-2.5'>
@@ -43,6 +45,7 @@ const Auth: FC = () => {
                 )}
             </View>
         </View>
+            </DismissKeyboard>
 
     )
 }
