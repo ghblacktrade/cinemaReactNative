@@ -2,8 +2,9 @@ import React, {FC} from 'react';
 import {View} from "react-native";
 import {Control} from "react-hook-form";
 import {IAuthFormData} from "../../../../shared/types/auth.interface";
-import Field from "../../UI/form-elements/fields/Field";
+import InputAuth from "../../UI/form-elements/fields/Field";
 import {validEmail} from "../../../../shared/regex";
+import InputLogin from "../../UI/form-elements/fields/Field";
 
 
 interface IAuthFields {
@@ -15,7 +16,7 @@ interface IAuthFields {
 const AuthFields: FC<IAuthFields> = ({control, isPassRequired}) => {
     return (
         <>
-            <Field <IAuthFormData>
+            <InputLogin <IAuthFormData>
                 placeholder='Enter email'
                 control={control}
                 name={'email'}
@@ -28,7 +29,7 @@ const AuthFields: FC<IAuthFields> = ({control, isPassRequired}) => {
                 }}
                 keyboardType='email-address'
             />
-            <Field <IAuthFormData>
+            <InputLogin <IAuthFormData>
                 placeholder='Enter password'
                 control={control}
                 name={'password'}
