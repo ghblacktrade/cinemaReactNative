@@ -5,6 +5,7 @@ import {IAuthFormData} from "../../../../shared/types/auth.interface";
 import InputAuth from "../../UI/form-elements/fields/Field";
 import {validEmail} from "../../../../shared/regex";
 import InputLogin from "../../UI/form-elements/fields/Field";
+import Field from "../../UI/form-elements/fields/Field";
 
 
 interface IAuthFields {
@@ -16,7 +17,7 @@ interface IAuthFields {
 const AuthFields: FC<IAuthFields> = ({control, isPassRequired}) => {
     return (
         <>
-            <InputLogin <IAuthFormData>
+            <Field <IAuthFormData>
                 placeholder='Enter email'
                 control={control}
                 name={'email'}
@@ -29,7 +30,7 @@ const AuthFields: FC<IAuthFields> = ({control, isPassRequired}) => {
                 }}
                 keyboardType='email-address'
             />
-            <InputLogin <IAuthFormData>
+            <Field <IAuthFormData>
                 placeholder='Enter password'
                 control={control}
                 name={'password'}
