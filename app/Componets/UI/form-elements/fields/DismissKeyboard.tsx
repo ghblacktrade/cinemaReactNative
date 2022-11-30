@@ -9,7 +9,6 @@ const DismissKeyboard: FC<PropsWithChildren<ViewProps>> = ({
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
             <View style={{
                 flex: 1,
-
             }}
                   {...rest}
             >

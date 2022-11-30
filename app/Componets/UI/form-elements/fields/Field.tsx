@@ -31,7 +31,7 @@ const Field = <T extends Record<string, any>>({
                             onChangeText={onChange}
                             onBlur={onBlur}
                             value={(value || '').toString()}
-                            className='text-white text-base'
+                            className='text-black text-base'
                             {...rest}
                         />
                     </View>
